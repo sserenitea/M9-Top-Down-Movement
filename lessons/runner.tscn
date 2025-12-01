@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://p75euy1gcr34"]
+
+[ext_resource type="Texture2D" uid="uid://c0i1ik45p7rhh" path="res://assets/runner_down.png" id="1_puh4d"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_52fff"]
+radius = 21.023796
+
+[node name="Runner" type="CharacterBody2D"]
+
+[node name="Skin" type="Sprite2D" parent="."]
+texture = ExtResource("1_puh4d")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 37)
+shape = SubResource("CircleShape2D_52fff")
