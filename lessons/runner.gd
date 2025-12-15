@@ -19,4 +19,11 @@ func _physics_process(delta: float) -> void:
 	
 	if direction.length() > 0:
 		_runner_visual.angle = rotate_toward(_runner_visual.angle, direction.orthogonal().angle(), 8 * delta)
-	
+		var current_speed_percent := velocity.length() / max_speed
+		_runner_visual.animation_name = (
+			RunnerVisual.Animations.WALK
+			if current_speed_percent < 0.8
+			else RunnerVisual.Animations.RUN
+		)
+	else:
+		_runner_visual.animation_name = RunnerVisual.Animations.IDLE
