@@ -22,19 +22,19 @@ position = Vector2(824, 637)
 position = Vector2(-738, -928)
 
 [node name="SimpleObstacle3" parent="." instance=ExtResource("2_4o7yg")]
-position = Vector2(-1267, 73)
+position = Vector2(-1282, 74)
 
 [node name="SimpleObstacle4" parent="." instance=ExtResource("2_4o7yg")]
 position = Vector2(-944, 654)
 
 [node name="SimpleObstacle5" parent="." instance=ExtResource("2_4o7yg")]
-position = Vector2(237, -803)
+position = Vector2(242, -850)
 
 [node name="SimpleObstacle6" parent="." instance=ExtResource("2_4o7yg")]
-position = Vector2(935, -528)
+position = Vector2(933, -595)
 
 [node name="SimpleObstacle7" parent="." instance=ExtResource("2_4o7yg")]
-position = Vector2(1413, 112)
+position = Vector2(1406, 111)
 
 [node name="SimpleObstacle8" parent="." instance=ExtResource("2_4o7yg")]
 position = Vector2(385, 112)
