@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://c62bk8cggi6yq"]
+[gd_scene load_steps=10 format=3 uid="uid://c62bk8cggi6yq"]
 
 [ext_resource type="Script" uid="uid://5nrf8ebgtofs" path="res://lessons/game.gd" id="1_48faf"]
 [ext_resource type="Texture2D" uid="uid://5vl7p0xb7nd8" path="res://assets/circuit_background.png" id="1_gkp25"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://bqkoh1b4h5357" path="res://lessons/curcuit.tscn" id="4_sepuf"]
 [ext_resource type="Theme" uid="uid://cdcyvsn1fp8wa" path="res://assets/countdown/count_down_theme.tres" id="7_viysf"]
 [ext_resource type="Script" uid="uid://57e8080cpukf" path="res://assets/countdown/count_down.gd" id="8_tpjcj"]
+[ext_resource type="PackedScene" uid="uid://dj6ye05dbiqpi" path="res://lessons/pause_screen.tscn" id="9_tpjcj"]
 
 [node name="Game" type="Node2D"]
 y_sort_enabled = true
@@ -76,15 +77,4 @@ vertical_alignment = 1
 script = ExtResource("8_tpjcj")
 metadata/_custom_type_script = "uid://57e8080cpukf"
 
-[node name="PauseScreen" type="Control" parent="CanvasLayer"]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="BlurColorRect" type="ColorRect" parent="CanvasLayer/PauseScreen"]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="PauseScreen" parent="CanvasLayer" instance=ExtResource("9_tpjcj")]
