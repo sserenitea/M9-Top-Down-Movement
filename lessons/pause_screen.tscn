@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://dj6ye05dbiqpi"]
+[gd_scene load_steps=8 format=3 uid="uid://dj6ye05dbiqpi"]
 
 [ext_resource type="FontFile" uid="uid://vxbfcnef0pvq" path="res://assets/fonts/rubik/Rubik-Bold.ttf" id="1_6f8pp"]
+[ext_resource type="Script" uid="uid://bgupu55kc5qmw" path="res://lessons/pause_screen.gd" id="2_qb0gi"]
 [ext_resource type="Shader" uid="uid://dp1hn66gsihpv" path="res://assets/blur.gdshader" id="2_vtnhc"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_okwwg"]
@@ -48,8 +49,10 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = SubResource("Theme_tsb0o")
+script = ExtResource("2_qb0gi")
 
 [node name="BlurColorRect" type="ColorRect" parent="."]
+unique_name_in_owner = true
 material = SubResource("ShaderMaterial_lnc5g")
 layout_mode = 1
 anchors_preset = 15
@@ -59,6 +62,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="UIPanelContainer" type="PanelContainer" parent="."]
+unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5

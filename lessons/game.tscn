@@ -20,7 +20,7 @@ texture = ExtResource("1_gkp25")
 
 [node name="Runner" parent="." instance=ExtResource("1_yasw7")]
 unique_name_in_owner = true
-position = Vector2(-449, 266)
+position = Vector2(-449, 151)
 
 [node name="FinishLine" parent="." instance=ExtResource("3_sepuf")]
 unique_name_in_owner = true
@@ -78,3 +78,4 @@ script = ExtResource("8_tpjcj")
 metadata/_custom_type_script = "uid://57e8080cpukf"
 
 [node name="PauseScreen" parent="CanvasLayer" instance=ExtResource("9_tpjcj")]
+visible = false
