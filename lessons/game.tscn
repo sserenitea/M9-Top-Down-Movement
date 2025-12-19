@@ -19,37 +19,6 @@ script = ExtResource("1_48faf")
 z_index = -1
 texture = ExtResource("1_gkp25")
 
-[node name="Obstacles" type="Node" parent="."]
-
-[node name="SimpleObstacle" parent="Obstacles" instance=ExtResource("2_4o7yg")]
-position = Vector2(824, 637)
-
-[node name="SimpleObstacle2" parent="Obstacles" instance=ExtResource("2_4o7yg")]
-position = Vector2(-738, -928)
-
-[node name="SimpleObstacle3" parent="Obstacles" instance=ExtResource("2_4o7yg")]
-position = Vector2(-1282, 74)
-
-[node name="SimpleObstacle4" parent="Obstacles" instance=ExtResource("2_4o7yg")]
-position = Vector2(-944, 654)
-
-[node name="SimpleObstacle5" parent="Obstacles" instance=ExtResource("2_4o7yg")]
-position = Vector2(242, -850)
-
-[node name="SimpleObstacle6" parent="Obstacles" instance=ExtResource("2_4o7yg")]
-position = Vector2(933, -595)
-
-[node name="SimpleObstacle7" parent="Obstacles" instance=ExtResource("2_4o7yg")]
-position = Vector2(1406, 111)
-
-[node name="SimpleObstacle8" parent="Obstacles" instance=ExtResource("2_4o7yg")]
-position = Vector2(385, 112)
-
-[node name="FinishLine" parent="." instance=ExtResource("3_sepuf")]
-unique_name_in_owner = true
-position = Vector2(-448, 189)
-area_width = 256
-
 [node name="Runner" parent="." instance=ExtResource("1_yasw7")]
 unique_name_in_owner = true
 position = Vector2(-449, 151)
@@ -57,6 +26,35 @@ position = Vector2(-449, 151)
 [node name="Bouncer" parent="." instance=ExtResource("5_8c4bg")]
 unique_name_in_owner = true
 position = Vector2(-1335.46, 0)
+
+[node name="FinishLine" parent="." instance=ExtResource("3_sepuf")]
+unique_name_in_owner = true
+position = Vector2(-448, 189)
+area_width = 256
+
+[node name="SimpleObstacle" parent="." instance=ExtResource("2_4o7yg")]
+position = Vector2(824, 637)
+
+[node name="SimpleObstacle2" parent="." instance=ExtResource("2_4o7yg")]
+position = Vector2(-738, -928)
+
+[node name="SimpleObstacle3" parent="." instance=ExtResource("2_4o7yg")]
+position = Vector2(-1282, 74)
+
+[node name="SimpleObstacle4" parent="." instance=ExtResource("2_4o7yg")]
+position = Vector2(-944, 654)
+
+[node name="SimpleObstacle5" parent="." instance=ExtResource("2_4o7yg")]
+position = Vector2(242, -850)
+
+[node name="SimpleObstacle6" parent="." instance=ExtResource("2_4o7yg")]
+position = Vector2(933, -595)
+
+[node name="SimpleObstacle7" parent="." instance=ExtResource("2_4o7yg")]
+position = Vector2(1406, 111)
+
+[node name="SimpleObstacle8" parent="." instance=ExtResource("2_4o7yg")]
+position = Vector2(385, 112)
 
 [node name="Curcuit" parent="." instance=ExtResource("4_sepuf")]
 z_index = -1
